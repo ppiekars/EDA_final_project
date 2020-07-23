@@ -27,3 +27,6 @@ data <- rename(data, "label_activity" = "V2")
 
 #Preparing tidy data set
 tidy_data <- data %>% group_by(label_activity, subject_no) %>% summarise_all(list(mean))
+
+#library(dataMaid)
+#makeCodebook(tidy_data)
