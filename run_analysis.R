@@ -30,3 +30,5 @@ tidy_data <- data %>% group_by(label_activity, subject_no) %>% summarise_all(lis
 
 #library(dataMaid)
 #makeCodebook(tidy_data)
+
+write.table(tidy_data, "tidy_data.txt", row.name = FALSE)
